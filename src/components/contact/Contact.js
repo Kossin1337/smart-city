@@ -10,6 +10,7 @@ const Contact = (props) => {
     <p> Contribute & Have an impact </p>
     </div>
     <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
       <p>Name</p>
       <input type="text" name='name' />
       <p>Email</p>
