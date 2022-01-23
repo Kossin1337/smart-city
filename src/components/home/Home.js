@@ -53,7 +53,7 @@ const Home = () => {
             title="Traffic system in Smart City"
             subTitle="The Smart City is all about improving daily life of the citizens"
             image={trafficImg}
-            para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+            para="A Smart City has the potential to drastically improve the current level of transportation throughout a city. It will have better traffic management, the ability to track public transportations and serve its citizens better with constant information and low prices"
           />
         </div>
       </section>
@@ -64,7 +64,7 @@ const Home = () => {
             title="Environment & Smart City"
             subTitle="Visualize and analyze all the city data to better decide when and how to act"
             image={environmentImg}
-            para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+            para="A smart city has thousands of energy-efficient buildings that can improve the air quality, use renewable energy sources, and decrease the dependence on non-renewable energy sources. These will help to decrease the ecological impact we have on the environment"
           />
         </div>
       </section>
