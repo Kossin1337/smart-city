@@ -57,3 +57,33 @@
         margin-bottom: 1rem;
     }
 }
+@media (max-width: "1024px") {
+    .home-content div {
+        text-align: center;
+    }
+    .home-content div h1 {
+        font-size: 2.5rem;
+    }
+    .home-content div p {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: "769px") {
+    
+}
+@media (max-width: "481px") {
+    .home-content {
+        padding: 3rem 4rem;
+    }
+    .home-content .advantages {
+        h1 {
+            font-size: 2rem !important;
+        }
+    }
+    .home-content .disadvantages {
+        h1 {
+            font-size: 2rem !important;
+        }
+    }
+
+}

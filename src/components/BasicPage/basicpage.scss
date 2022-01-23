@@ -20,7 +20,8 @@
     }
     .cards {
         display: grid;
-        grid-template-columns: repeat((4,1fr));
+        grid-template-columns: repeat(4,1fr);
+        gap: 2rem;
         .card-content {
             position: relative;
             display: flex;
@@ -46,6 +47,41 @@
             }
             }
         }
+    }
+}
+@media (max-width: "1024px") {
+    .basic-page div h1 {
+        font-size: 2.5rem;
+    }
+    .basic-page .cards .card-content {
+        height: 20rem;
+        width: 17rem;
+    }
+}
+@media (max-width: "769px") {
+    .basic-page .cards {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .basic-page .cards::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+    .basic-page .cards .card-content {
+        width: 20rem;
+        height: 25rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}
+@media (max-width: "481px") {
+    .basic-page {
+    padding: 3rem 4rem;
+    }
+    .basic-page .cards .card-content {
+        height: 20rem;
+        width: 17rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
     }
 }
 
