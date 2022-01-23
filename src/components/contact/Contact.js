@@ -11,12 +11,11 @@ const Contact = (props) => {
     </div>
     <form name="contact" method="POST" data-netlify="true">
       <p>Name</p>
-      <input type="text" />
+      <input type="text" name='name' />
       <p>Email</p>
-      <input type="email" />
+      <input type="email" name='email' />
       <p>Message</p>
-      <input id='message' type="text" height="50" />
-
+      <input id='message' type="text" height="50" name='message' />
       <button type='submit'>Submit</button>
     </form>
   </div>
