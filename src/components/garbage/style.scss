@@ -1,0 +1,99 @@
+.garbage-page {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(15rem, auto));
+    padding: 5rem 7rem;
+    width: 100%;
+    div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        p {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            color: sandybrown;
+            font-weight: bolder;
+        }
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        .card-content {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            width: 22rem;
+            height: 25rem;
+            background-color: #2b2b2b;
+            border-radius: 20px;
+            margin: auto;
+            padding: 1rem;
+            padding-top: 3.5rem;
+            top: 2rem;
+            p {
+                color: #ffffff;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+            .card-icon {
+                position: absolute;
+                align-items: center;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                background-color: #222222;
+                top: -2rem;
+                padding: 1rem;
+                .icon {
+                    font-size: 2rem;
+                    transform: translateY(0.5rem);
+                }
+            }
+        }
+    }
+}
+@media (max-width: "1024px") {
+    .garbage-page div h1 {
+        font-size: 2.5rem;
+    }
+    .garbage-page .cards .card-content {
+        height: 20rem;
+        width: 17rem;
+    }
+}
+@media (max-width: "769px") {
+    .garbage-page .cards {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .garbage-page .cards::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+    }
+    .garbage-page .cards .card-content {
+        width: 20rem;
+        height: 25rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}
+@media (max-width: "481px") {
+    .garbage-page {
+        padding: 3rem 4rem;
+    }
+    .garbage-page .cards .card-content {
+        height: 20rem;
+        width: 17rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}

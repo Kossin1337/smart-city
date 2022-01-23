@@ -1,39 +1,29 @@
-import React from 'react';
-import "./basicpage.scss"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSortUp } from '@fortawesome/free-solid-svg-icons'
+import React from "react";
+import "./basicpage.scss";
 
-const BasicPage = (props) => {
-  return <>
-  <div className='basic-page'>
+const BasicPage = ({ title, subTitle, image, para }) => {
+  return (
     <div>
-   <h1>How {props.title} Can improve your daily Life</h1>
-    <p> {props.title}</p>
+      <div className="basic-page">
+        <div>
+          <h1>
+            {title}
+          </h1>
+          <p>
+            {" "}{subTitle}
+          </p>
+        </div>
+        <div className="cards">
+          <div className="card-content">
+            {para}
+          </div>
+          <div className="card-image">
+            <img src={image} alt={title} />
+          </div>
+        </div>
+      </div>
     </div>
-    <div className='cards'>
-        <div className='card-content'>
-          <div className='card-icon'>
-          <FontAwesomeIcon className='icon' icon={faSortUp} />
-          </div>
-        </div>
-        <div className='card-content'>
-        <div className='card-icon'>
-          <FontAwesomeIcon className='icon' icon={faSortUp} />
-          </div>
-        </div>
-        <div className='card-content'>
-        <div className='card-icon'>
-          <FontAwesomeIcon className='icon' icon={faSortUp} />
-          </div>
-        </div>
-        <div className='card-content'>
-        <div className='card-icon'>
-          <FontAwesomeIcon className='icon' icon={faSortUp} />
-          </div>
-        </div>
-    </div>
-  </div>
-  </>
+  );
 };
 
 export default BasicPage;

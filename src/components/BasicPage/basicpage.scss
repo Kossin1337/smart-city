@@ -20,68 +20,20 @@
     }
     .cards {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 2rem;
+        grid-template-columns: 2fr 1fr;
+        gap: 5rem;
         .card-content {
-            position: relative;
             display: flex;
-            align-items: center;
-            width: 20rem;
-            height: 25rem;
-            background-color: #2B2B2B;
-            border-radius: 20px;
-            margin: auto;
-            top: 2rem;
-            .card-icon { 
-            position: absolute;
-            align-items: center;
-            width: 5rem;
-            height: 5rem;
-            border-radius: 50%;
-            background-color:#222222;
-            top: -2rem;
-            .icon {
-                margin: auto 0;
-                font-size: 3rem;
-                transform: translateY(0.5rem);
-            }
+            align-items: flex-start;
+            text-align: justify;
+            font-size: 2rem;
+        }
+        .card-image {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
             }
         }
     }
 }
-@media (max-width: "1024px") {
-    .basic-page div h1 {
-        font-size: 2.5rem;
-    }
-    .basic-page .cards .card-content {
-        height: 20rem;
-        width: 17rem;
-    }
-}
-@media (max-width: "769px") {
-    .basic-page .cards {
-        overflow-x: scroll;
-        overflow-y: hidden;
-    }
-    .basic-page .cards::-webkit-scrollbar { 
-        display: none;  /* Safari and Chrome */
-    }
-    .basic-page .cards .card-content {
-        width: 20rem;
-        height: 25rem;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-    }
-}
-@media (max-width: "481px") {
-    .basic-page {
-    padding: 3rem 4rem;
-    }
-    .basic-page .cards .card-content {
-        height: 20rem;
-        width: 17rem;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-    }
-}
-

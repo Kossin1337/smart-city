@@ -6,6 +6,11 @@ import Contact from "../contact/Contact";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSortUp, faSortDown } from '@fortawesome/free-solid-svg-icons'
 import "./Home.scss"
+import Garbage from "../garbage/Garbage";
+import shoppingImg from "../../images/shopping.png";
+import trafficImg from "../../images/traffic.png";
+import environmentImg from "../../images/environment.png";
+
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -27,14 +32,47 @@ const Home = () => {
       <section className="cd-section-1">
         <div>
           <Navbar title="Garbage Collecting" />
-          <BasicPage title="Garbage Collecting" />
+          <Garbage />
+        </div>
+      </section>
+      <section className="cd-section-1">
+        <div>
+          <Navbar title="Shopping" />
+          <BasicPage 
+            title="Shopping made easy without leaving home"
+            subTitle="The Smart City is all about improving daily life of the citizens"
+            image={shoppingImg}
+            para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+          />
+        </div>
+      </section>
+      <section className="cd-section-1">
+        <div>
+          <Navbar title="Traffic system in Smart City" />
+          <BasicPage 
+            title="Traffic system in Smart City"
+            subTitle="The Smart City is all about improving daily life of the citizens"
+            image={trafficImg}
+            para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+          />
+        </div>
+      </section>
+      <section className="cd-section-1">
+        <div>
+          <Navbar title="Environment & Smart City" />
+          <BasicPage 
+            title="Environment & Smart City"
+            subTitle="Visualize and analyze all the city data to better decide when and how to act"
+            image={environmentImg}
+            para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+          />
         </div>
       </section>
 
       <section className="cd-section-2">
         <div>
           <Navbar title="Contact" />
-          <Contact title="Contact" />
+          <Contact />
         </div>
       </section>
 
