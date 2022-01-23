@@ -1,7 +1,7 @@
 import React from 'react';
 import "./basicpage.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSortUp, faSortDown } from '@fortawesome/free-solid-svg-icons'
+import { faSortUp } from '@fortawesome/free-solid-svg-icons'
 
 const BasicPage = (props) => {
   return <>
