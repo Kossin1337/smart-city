@@ -1,5 +1,5 @@
 import React from 'react';
-import smartCity from "../../images/smartcity.svg"
+// import smartCity from "../../images/smartcity.svg"
 import "./styles.scss"
 
 

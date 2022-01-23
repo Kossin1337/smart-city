@@ -9,7 +9,7 @@ const Contact = (props) => {
    <h1>How {props.title} Can improve your daily Life</h1>
     <p> Contribute & Have an impact </p>
     </div>
-    <form>
+    <form netlify>
       <p>Name</p>
       <input type="text" />
       <p>Email</p>
