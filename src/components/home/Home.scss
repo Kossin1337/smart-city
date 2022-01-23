@@ -1,8 +1,12 @@
 .home {
   color: white;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
   section {
     background-color: black;
     height: 100vh;
+    scroll-snap-align: start;
   }
 
   nav {
