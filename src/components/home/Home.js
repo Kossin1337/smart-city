@@ -1,4 +1,10 @@
 import React, { useEffect, useState } from "react";
+import BasicPage from "../BasicPage";
+import HomeContent from "../homeContent/HomeContent";
+import Navbar from "../navbar/Navbar";
+import Contact from "../contact/Contact";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSortUp, faSortDown } from '@fortawesome/free-solid-svg-icons'
 import "./Home.scss"
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -14,38 +20,28 @@ const Home = () => {
     <div className="home">
       <section className="cd-section-0">
         <div>
-          <h2>Page Scroll Effects</h2>
+          <Navbar title="Smart City" />
+          <HomeContent />
         </div>
       </section>
-
       <section className="cd-section-1">
         <div>
-          <h2>Section 2</h2>
+          <Navbar title="Garbage Collecting" />
+          <BasicPage title="Garbage Collecting" />
         </div>
       </section>
 
       <section className="cd-section-2">
         <div>
-          <h2>Section 3</h2>
-        </div>
-      </section>
-
-      <section className="cd-section-3">
-        <div>
-          <h2>Section 4</h2>
-        </div>
-      </section>
-
-      <section className="cd-section-4">
-        <div>
-          <h2>Section 5</h2>
+          <Navbar title="Contact" />
+          <Contact title="Contact" />
         </div>
       </section>
 
       <nav>
         <ul className="cd-vertical-nav">
-          <li onClick={() => setCurrentSlide(currentSlide - 1)}>Prev</li>
-          <li onClick={() => setCurrentSlide(currentSlide + 1)}>Next</li>
+          <li onClick={() => setCurrentSlide(currentSlide - 1)}><FontAwesomeIcon icon={faSortUp} /></li>
+          <li onClick={() => setCurrentSlide(currentSlide + 1)}><FontAwesomeIcon icon={faSortDown} /></li>
         </ul>
       </nav>
     </div>

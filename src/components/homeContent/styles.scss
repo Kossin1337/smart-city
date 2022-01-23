@@ -1,0 +1,59 @@
+.home-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 5rem 7rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 70%;
+    min-width: 40rem;
+    h1 {
+        margin: 0;
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        color: rgba(255, 255, 255, 0.801);
+    }
+    span {
+        font-weight: bolder;
+    }
+}
+.images {
+    width: 50%;
+    img {
+    height: 100%;
+    width: 100%;
+    }
+}
+.advantages, .disadvantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+        width: 100%;
+    }
+    li {
+    list-style: none;
+    padding: 1rem 5rem;
+    text-align: left;
+    font-size: 1.2rem;
+    }
+}
+.advantages {
+    h1 {
+        color: green;
+        margin-bottom: 1rem;
+    }
+}
+.disadvantages {
+    h1 {
+        color: rgb(253, 67, 67);
+        margin-bottom: 1rem;
+    }
+}

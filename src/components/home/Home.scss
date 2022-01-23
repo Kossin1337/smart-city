@@ -1,7 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --backgroundColor: "#2B2B2B"
+}
+html {
+  font-size: 62.5%;
+}
 .home {
   color: white;
+  overflow-x: hidden;
   section {
-    background-color: black;
+    background-color: #141414;
     height: 100vh;
   }
 
@@ -16,6 +28,7 @@
       li {
         list-style: none;
         cursor: pointer;
+        font-size: 2rem;
       }
     }
   }

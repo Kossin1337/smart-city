@@ -1,0 +1,51 @@
+.basic-page {
+    display: grid;
+    grid-template-rows: repeat(2,minmax(15rem,auto));
+    padding: 5rem 7rem;
+    width: 100%;
+    div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        p {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            color: sandybrown;
+            font-weight: bolder;
+        }
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat((4,1fr));
+        .card-content {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 20rem;
+            height: 25rem;
+            background-color: #2B2B2B;
+            border-radius: 20px;
+            margin: auto;
+            top: 2rem;
+            .card-icon { 
+            position: absolute;
+            align-items: center;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            background-color:#222222;
+            top: -2rem;
+            .icon {
+                margin: auto 0;
+                font-size: 3rem;
+                transform: translateY(0.5rem);
+            }
+            }
+        }
+    }
+}
+
