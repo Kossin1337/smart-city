@@ -35,7 +35,7 @@ const Home = () => {
           <Garbage />
         </div>
       </section>
-      <section className="cd-section-1">
+      <section className="cd-section-2">
         <div>
           <Navbar title="Shopping" />
           <BasicPage 
@@ -46,7 +46,7 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="cd-section-1">
+      <section className="cd-section-3">
         <div>
           <Navbar title="Traffic system in Smart City" />
           <BasicPage 
@@ -57,7 +57,7 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="cd-section-1">
+      <section className="cd-section-4">
         <div>
           <Navbar title="Environment & Smart City" />
           <BasicPage 
@@ -69,7 +69,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="cd-section-2">
+      <section className="cd-section-5">
         <div>
           <Navbar title="Contact" />
           <Contact />
